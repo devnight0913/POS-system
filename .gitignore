@@ -1,7 +1,7 @@
 # Ignore node_modules directory
-/bin/node_modules
-/bin/.env
-/bin/vendor
+node_modules
+.env
+vendor
 /cache
 
 # Ignore log files
