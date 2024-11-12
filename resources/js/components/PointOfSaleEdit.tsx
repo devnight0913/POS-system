@@ -67,6 +67,11 @@ type State = {
 };
 
 class PointOfSaleEdit extends Component<Props, State> {
+    setState(arg0: { orderId: any; }) {
+        throw new Error('Method not implemented.');
+    }
+    state: { orderId: string; orderNumber: string; categories: never[]; products: never[]; cart: never[]; deletedProducts: never[]; customers: never[]; customer: undefined; customerName: null; customerEmail: null; customerMobile: null; customerCity: null; customerBuilding: null; customerStreet: null; customerFloor: null; customerApartment: null; showProducts: boolean; categoryName: null; subtotal: number; total: number; tax: number; vatType: any; deliveryCharge: number; discount: number; searchValue: null; remarks: null; isFullScreen: boolean; tenderAmount: number; isLoading: boolean; isLoadingCategories: boolean; currentPrice: number; };
+    props: any;
     constructor(props: Props) {
         super(props);
 
@@ -105,6 +110,8 @@ class PointOfSaleEdit extends Component<Props, State> {
         };
     }
 
+
+    
     getAppSettings = (): any => {
         return JSON.parse(this.props.settings);
     };
